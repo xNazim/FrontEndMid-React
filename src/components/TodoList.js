@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import TodoForm from './TodoForm';
 import Todo from './Todo';
+import logo from '../images/alatoo.png';
+import secondLogo from '../images/react.png';
 
 function TodoList() {
   const [todos, setTodos] = useState([]);
@@ -42,6 +44,8 @@ function TodoList() {
 
   return (
     <>
+      <img src={logo} className="logo" alt="logo" />
+      <img src={secondLogo} className="second-logo" alt="second logo" />
       <h1>What's the Plan for Today?</h1>
       <TodoForm onSubmit={addTodo} />
       <Todo
