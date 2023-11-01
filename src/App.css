@@ -117,32 +117,36 @@ h1 {
   background: linear-gradient(90deg, rgba(255, 118, 20, 1) 0%, rgba(255, 84, 17, 1) 100%);
 }
 
+@keyframes rotateAndJump {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+  }
+  100% {
+    transform: translateY(0) rotate(360deg);
+  }
+}
+
 .logo {
   position: absolute;
   top: 40px; 
   left: 40px; 
-  width: 100px; 
+  width: 150px; 
   height: auto;
-  animation: rotate 4s linear infinite; 
+  animation: rotateAndJump 4s cubic-bezier(0.165, 0.84, 0.44, 1) infinite; 
 }
 
 .second-logo {
   position: absolute;
   top: 40px; 
   right: 40px; 
-  width: 100px; 
+  width: 150px; 
   height: auto;
-  animation: rotate 4s linear infinite; 
+  animation: rotateAndJump 4s cubic-bezier(0.165, 0.84, 0.44, 1) infinite; 
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 
 .icons {
