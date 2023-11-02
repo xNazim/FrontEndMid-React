@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Todo List Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple Todo List web application built using React. It allows users to add, update, and delete tasks. The application provides a clean and intuitive user interface for managing your daily tasks.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Add Todo:** Add new tasks to your list.
+- **Update Todo:** Edit existing tasks to modify their content.
+- **Delete Todo:** Remove tasks from the list.
+- **Mark as Complete:** Mark tasks as complete or incomplete.
+- **Responsive Design:** The application is designed to work seamlessly across different devices and screen sizes.
 
-### `npm start`
+## Prerequisites
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Before you begin, ensure you have the following installed on your local machine:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Clone the repository:**
 
-### `npm run build`
+2. **Install Dependencies:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **Run the Application:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This will start the development server and you can view the application in your browser at `http://localhost:3000`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
 
-### `npm run eject`
+- To add a new task, type your task in the input field and click the "Add todo" button.
+- To edit a task, click the edit icon next to the task. Make your changes in the textarea and click "Update todo."
+- To mark a task as complete or incomplete, click on the task text.
+- To delete a task, click the delete icon next to the task.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Deployment
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This application is configured for deployment using GitHub Actions and AWS services. The deployment workflow includes the following steps:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Install AWS CLI v2:** Installs the AWS Command Line Interface version 2.
+- **Node.js Setup:** Sets up Node.js version 20.x.
+- **Install Dependencies:** Installs the project dependencies using npm.
+- **Build Application:** Builds the React application for production.
+- **Upload App to S3 Bucket:** Syncs the build files with the specified S3 bucket.
+- **Create CloudFront Cache Invalidation:** Invalidates the CloudFront cache to ensure the latest version of the application is served to users.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The deployment workflow can be triggered manually using the GitHub Actions workflow_dispatch event or automatically upon pushing changes to the `main` branch.
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
