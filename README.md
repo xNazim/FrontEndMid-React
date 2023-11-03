@@ -2,6 +2,8 @@
 
 This is a simple Todo List web application built using React. It allows users to add, update, and delete tasks. The application provides a clean and intuitive user interface for managing your daily tasks.
 
+![Overview](https://github.com/xNazim/FrontEndMid-React/tree/main/screenshots/front1.png)
+
 ## Features
 
 - **Add Todo:** Add new tasks to your list.
@@ -29,7 +31,6 @@ This will start the development server and you can view the application in your 
 
 - To add a new task, type your task in the input field and click the "Add todo" button.
 - To edit a task, click the edit icon next to the task. Make your changes in the textarea and click "Update todo."
-- To mark a task as complete or incomplete, click on the task text.
 - To delete a task, click the delete icon next to the task.
 
 ## Deployment
