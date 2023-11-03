@@ -1,41 +1,44 @@
 import React, { useState, useRef, useEffect } from 'react';
+import '../App.css'; // Import your CSS file
 
 function TodoForm({ onSubmit, edit }) {
   const [input, setInput] = useState(edit ? edit.text : '');
   const inputRef = useRef(null);
+  const [isButtonPressed, setIsButtonPressed] = useState(false);
 
   useEffect(() => {
     inputRef.current.focus();
   }, []);
 
-  const handleChange = (e) => {
-    setInput(e.target.value);
+  const getRandomBorderColorClass = () => {
+    const borderColorClasses = ['red-border', 'blue-border', 'green-border']; // Add more color classes if needed
+    const randomIndex = Math.floor(Math.random() * borderColorClasses.length);
+    return borderColorClasses[randomIndex];
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
+  const handleButtonClick = () => {
     onSubmit({
       id: edit ? edit.id : Math.floor(Math.random() * 10000),
       text: input,
     });
 
     setInput('');
+    setIsButtonPressed(true);
   };
 
   return (
-    <form onSubmit={handleSubmit} className='todo-form'>
+    <div className='todo-form'>
       <textarea
         placeholder={edit ? 'Update your todo' : 'Add a todo'}
         value={input}
-        onChange={handleChange}
-        className='todo-textarea'
+        onChange={(e) => setInput(e.target.value)}
+        className={`todo-textarea ${isButtonPressed ? getRandomBorderColorClass() : ''}`}
         ref={inputRef}
       />
-      <button type="submit" className='todo-button'>
+      <button type="button" onClick={handleButtonClick} className='todo-button'>
         {edit ? 'Update todo' : 'Add todo'}
       </button>
-    </form>
+    </div>
   );
 }
 

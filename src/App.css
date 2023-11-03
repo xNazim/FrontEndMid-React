@@ -60,6 +60,27 @@ h1 {
   color: #b0b8bf;
 }
 
+.todo-textarea.pressed {
+  border: 2px solid green; 
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.5); 
+}
+.todo-textarea {
+  border: 2px solid #ccc; 
+  transition: border-color 0.5s ease; 
+}
+
+.red-border {
+  border-color: red;
+}
+
+.blue-border {
+  border-color: blue;
+}
+
+.green-border {
+  border-color: green;
+}
+
 .todo-button {
   padding: 14px 32px;
   border: none;
