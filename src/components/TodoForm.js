@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import '../App.css'; // Import your CSS file
+import '../App.css';
 
 function TodoForm({ onSubmit, edit }) {
   const [input, setInput] = useState(edit ? edit.text : '');
@@ -11,7 +11,7 @@ function TodoForm({ onSubmit, edit }) {
   }, []);
 
   const getRandomBorderColorClass = () => {
-    const borderColorClasses = ['red-border', 'blue-border', 'green-border']; // Add more color classes if needed
+    const borderColorClasses = ['red-border', 'blue-border', 'green-border'];
     const randomIndex = Math.floor(Math.random() * borderColorClasses.length);
     return borderColorClasses[randomIndex];
   };
