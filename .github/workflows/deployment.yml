@@ -1,8 +1,8 @@
 name: Deployment
-on: workflow_dispatch
-  # push:
-  #   branches:
-  #     - main
+on:
+  push:
+    branches:
+      - main
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -10,11 +10,11 @@ jobs:
     env:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-      AWS_BUCKET_NAME: samplenz01
+      AWS_BUCKET_NAME: roza-rm1
       AWS_DEFAULT_REGION: "us-east-1"
-      CF_DIST_ID: E2QEYFG8GKH4KG
+      CF_DIST_ID: E1GY44X9TENGWS
       SOURCE_DIR: "build"
-      DEST_DIR: "web"
+      DEST_DIR: "nz-web"
       CI: false
 
     steps:
