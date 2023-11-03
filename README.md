@@ -7,8 +7,6 @@ This is a simple Todo List web application built using React. It allows users to
 - **Add Todo:** Add new tasks to your list.
 - **Update Todo:** Edit existing tasks to modify their content.
 - **Delete Todo:** Remove tasks from the list.
-- **Mark as Complete:** Mark tasks as complete or incomplete.
-- **Responsive Design:** The application is designed to work seamlessly across different devices and screen sizes.
 
 ## Prerequisites
 
