@@ -9,6 +9,17 @@ This is a simple Todo List web application built using React. It allows users to
 - **Add Todo:** Add new tasks to your list.
 - **Update Todo:** Edit existing tasks to modify their content.
 - **Delete Todo:** Remove tasks from the list.
+- **Dynamic Styling:**  Input field borders change dynamically for a visually appealing experience.
+- **Intuitive UI:**  Clean and intuitive interface for efficient task management.
+
+## Directory Structure
+
+- **`components/`**: Contains React components.
+- **`images/`**: Stores application images.
+- **`App.css`**: Stylesheet for the application.
+- **`App.js`**: Main application file rendering the `TodoList` component.
+- **`index.css`**: Root stylesheet for the application.
+- **`index.js`**: JavaScript file rendering the React app into the DOM.
 
 ## Prerequisites
 
@@ -17,15 +28,12 @@ Before you begin, ensure you have the following installed on your local machine:
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/) (Node Package Manager)
 
-## Getting Started
+## How to Run the Application
 
-1. **Clone the repository:**
-
-2. **Install Dependencies:**
-
-3. **Run the Application:**
-
-This will start the development server and you can view the application in your browser at `http://localhost:3000`.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/xNazim/FrontEndMid-React.git
+   cd FrontEndMid-React
 
 ## Usage
 
