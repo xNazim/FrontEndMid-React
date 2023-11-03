@@ -2,7 +2,7 @@
 
 This is a simple Todo List web application built using React. It allows users to add, update, and delete tasks. The application provides a clean and intuitive user interface for managing your daily tasks.
 
-![Overview](https://github.com/xNazim/FrontEndMid-React/tree/main/screenshots/front1.png)
+![Overview]([https://github.com/xNazim/FrontEndMid-React/tree/main/screenshots/front1.png](https://github.com/xNazim/FrontEndMid-React/blob/main/screenshots/front1.png?raw=true))
 
 ## Features
 
